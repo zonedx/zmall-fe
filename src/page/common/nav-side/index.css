@@ -1,0 +1,26 @@
+/**
+ *
+ * @Date 2019-11-01 02:11
+ * @Author zone
+ */
+
+/*导航主体*/
+ .nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+ }
+ .nav-side .nav-item{
+    line-height: 25px;
+ }
+ .nav-side .nav-item .link{
+    color: #888;
+ }
+ .nav-side .nav-item.active .link{
+    color: #c60023;
+ }
+ /*右侧内容区*/
+ .content.with-nav{
+    float: left;
+    width: 950px;
+ }

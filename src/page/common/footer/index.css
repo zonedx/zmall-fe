@@ -1,0 +1,22 @@
+/**
+ *
+ * @Date 2019-11-01 11:35
+ * @Author zone
+ */
+
+.footer{
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #777;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #888;
+    line-height: 30px;
+}

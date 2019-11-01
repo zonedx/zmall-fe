@@ -1,12 +1,13 @@
 
 'use strict';
 
-require('./index.css');
+require('page/common/header/index.js');
+require('page/common/nav/index.js');
+var navSide = require('page/common/nav-side/index.js');
 
 var _zm = require('util/zm.js');
 
-var html = '<div>{{data}}</div>';
-var data = {
-    data : 123
-}
-console.log(_zm.renderHtml(html,data));
+navSide.init({
+    name : 'user-center'
+});
+

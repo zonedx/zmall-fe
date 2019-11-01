@@ -24,6 +24,7 @@ var config = {
         'common': ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
         'login' : ['./src/page/login/index.js'],
+        'result': ['./src/page/result/index.js']
     },
     output:{
         path: __dirname+'/dist',
@@ -52,7 +53,7 @@ var config = {
     },
     resolve : {
         alias : {
-            // node_modules    : __dirname + '/node_modules',
+            node_modules    : __dirname + '/node_modules',
             util            : __dirname + '/src/util',
             page            : __dirname + '/src/page',
             service         : __dirname + '/src/service',
@@ -79,7 +80,7 @@ var config = {
         // new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
         // new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         // new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
-        // new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
     ]
 };
 

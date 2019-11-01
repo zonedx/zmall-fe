@@ -1,0 +1,18 @@
+/**
+ *
+ * @Date 2019-11-01 09:26
+ * @Author zone
+ */
+
+.nav-simple{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.nav-simple .logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #60023c;
+
+}
