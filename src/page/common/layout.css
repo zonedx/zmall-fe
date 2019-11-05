@@ -36,6 +36,24 @@ input[type='checkbox']{
     overflow: hidden;
 }
 
+/*panel*/
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
+}
+
 /* 全局通用样式 */
 /* 隐藏类 */
 .hide{
@@ -77,16 +95,23 @@ input[type='checkbox']{
     font-size: 15px;
     padding: 0 10px;
 }
+.btn-edit{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    /*padding: 0px 10px;*/
+}
 
 /* loading */
 .loading{
     margin: 10px auto;
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 65px;
+    height: 65px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background: url(../../image/test.jpg) no-repeat;
+    background: url(../../image/icon/loading.gif) no-repeat;
     opacity: .6;
 }
 
