@@ -24,9 +24,9 @@ var page = {
     },
     onLoad : function(){
         // 如果没有传productId，自动跳回首页
-        // if (!this.data.productId) {
-        //     _zm.goHome();
-        // }
+        if (!this.data.productId) {
+            _zm.goHome();
+        }
         this.loadDetail();
     },
     bindEvent : function(){
