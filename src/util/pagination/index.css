@@ -1,0 +1,44 @@
+/**
+ *
+ * @Date 2019-11-05 09:45
+ * @Author zone
+ */
+ .pg-content{
+    text-align: center;
+    color: #333;
+}
+.pg-content .pg-item{
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+/*    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;*/
+}
+.pg-content .pg-item:hover{
+    background: #60023c;
+    color: #fff;
+}
+.pg-content .pg-item.disabled{
+    color: #ccc;
+    background: none;
+    cursor: auto;
+}
+.pg-content .pg-item.active{
+    border: 1px solid #f6f6f6;
+    background: #60023c;
+    cursor: auto;
+    color: #fff;
+}
+.pg-content .pg-total{
+    margin-left: 10px;
+    background: none;
+    cursor: auto;
+}
