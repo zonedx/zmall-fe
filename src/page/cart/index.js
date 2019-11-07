@@ -4,6 +4,7 @@
  * @Author zone
  */
 
+'use strict';
 require('./index.css');
 require('page/common/header/index.js');
 var navSide = require('page/common/nav-side/index.js');
@@ -139,7 +140,7 @@ var page = {
         $(document).on('click', '.btn-submit', function(){
             // 总价大于0，进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _zm.errorTips('请选择商品后再提交');
             }
