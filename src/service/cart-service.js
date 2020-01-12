@@ -22,6 +22,7 @@ var _cart = {
         _zm.request({
             url     : _zm.getServerUrl('/cart/add.do'),
             data    : productInfo,
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -41,6 +42,7 @@ var _cart = {
             data    : {
                 productId : productId
             },
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -52,6 +54,7 @@ var _cart = {
             data    : {
                 productId : productId
             },
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -60,6 +63,7 @@ var _cart = {
     selectAllProduct : function(resolve, reject){
         _zm.request({
             url     : _zm.getServerUrl('/cart/select_all.do'),
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -68,6 +72,7 @@ var _cart = {
     unselectAllProduct : function(resolve, reject){
         _zm.request({
             url     : _zm.getServerUrl('/cart/un_select_all.do'),
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -76,6 +81,7 @@ var _cart = {
     updateProduct : function(productInfo, resolve, reject){
         _zm.request({
             url     : _zm.getServerUrl('/cart/update.do'),
+            method  : 'POST',
             data    : productInfo,
             success : resolve,
             error   : reject
@@ -88,6 +94,7 @@ var _cart = {
             data    : {
                 productIds : productIds
             },
+            method  : 'POST',
             success : resolve,
             error   : reject
         });

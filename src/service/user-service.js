@@ -27,7 +27,7 @@ var _user = {
                 type    : 'username',
                 str     : username
             },
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });
@@ -47,7 +47,7 @@ var _user = {
         _zm.request({
             // 本来调用的 get_user_info.do接口  get_information.do
             url     : _zm.getServerUrl('/user/get_user_info.do'),
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });
@@ -59,7 +59,7 @@ var _user = {
             data    : {
                 username : username
             },
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });
@@ -88,7 +88,7 @@ var _user = {
     getUserInfo : function(resolve, reject){
         _zm.request({
             url     : _zm.getServerUrl('/user/get_information.do'),
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });

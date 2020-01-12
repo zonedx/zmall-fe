@@ -15,7 +15,7 @@ var _payment = {
             data    : {
                 orderNo : orderNumber
             },
-            // method  : 'POST',
+            method  : 'POST',
             success : resolve,
             error   : reject
         });

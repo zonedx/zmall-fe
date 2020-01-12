@@ -14,7 +14,7 @@ var _product = {
         _zm.request({
             url     : _zm.getServerUrl('/product/list.do'),
             data    : listParam,
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });

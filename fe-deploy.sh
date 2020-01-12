@@ -5,7 +5,7 @@
 # admin:  front_deploy.sh admin-fe
 
 GIT_HOME=~/developer/git-repository/
-DEST_PATH=~/developer/frontend/
+DEST_PATH=/usr/local/nginx/html/frontend/
 
 #cd dir
 if [ ! -n "$1" ];
@@ -49,7 +49,8 @@ npm run dist
 if [ -d "./dist" ];
     then
     echo -e "==========desk backup============="
-    mv $DEST_PATH$1/dist $DEST_PATH$1/dist.back
+    time1=$(date "+%Y%m%d%H%M%S")
+    mv $DEST_PATH$1/dist $DEST_PATH$1/dist.back$time1
 
     echo -e "==========copy============="
     cp -R ./dist $DEST_PATH$1

@@ -25,6 +25,7 @@ var _address = {
         _zm.request({
             url     : _zm.getServerUrl('/shipping/add.do'),
             data    : addressInfo,
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -34,6 +35,7 @@ var _address = {
         _zm.request({
             url     : _zm.getServerUrl('/shipping/update.do'),
             data    : addressInfo,
+            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -45,6 +47,7 @@ var _address = {
             data    : {
                 shippingId : shippingId
             },
+            method  : 'POST',
             success : resolve,
             error   : reject
         });

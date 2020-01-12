@@ -23,7 +23,7 @@ var _order = {
         _zm.request({
             url     : _zm.getServerUrl('/order/create.do'),
             data    : orderInfo,
-            // method  : 'POST',
+            method  : 'POST',
             success : resolve,
             error   : reject
         })
@@ -57,7 +57,7 @@ var _order = {
             data    : {
                 orderNo : orderNumber
             },
-            // method  : 'POST',
+            method  : 'POST',
             success : resolve,
             error   : reject
         })
